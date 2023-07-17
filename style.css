@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -34,11 +35,57 @@
   background: rgb(232, 239, 237);
   box-shadow: 0 0 2px 0.1px rgb(80, 154, 144);
   border-radius: 2px;
-  line-height: 2rem;
+  line-height: 2.2rem;
   font-size: 1.2rem;
 }
+
+.prev-btn,
+.next-btn {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  margin: 0 10px;
+  transition: 0.1s ease;
+}
+
+.next-btn:active {
+  transform: translateX(2px);
+}
+.prev-btn:active {
+  transform: translateX(-2px);
+}
+
+.random-btn {
+  margin: 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: 0.1s ease;
+}
+.random-btn:hover {
+  color: #ffffff;
+  background: black;
+}
+.random-btn:active {
+  transform: translateY(2px);
+}
+
+/* ids */
 #person-image {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 1rem;
+}
+#author {
+  font-weight: 800;
+}
+#job {
+  color: rgb(29, 32, 235);
+  text-shadow: 0 0 1px black;
+  font-weight: 600;
+}
+#info {
+  padding: 0 1rem;
 }
